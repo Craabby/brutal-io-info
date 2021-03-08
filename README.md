@@ -1,4 +1,4 @@
-# [brutal.io](https://brutal.io) packet info
+# [brutal.io](https://brutal.io) info
 
 In this repo, you will find  a lot of my research on the game [brutal.io](https://brutal.io), including packet information and structure.
 ## Clientbound Packets
