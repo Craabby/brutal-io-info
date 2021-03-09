@@ -1,27 +1,18 @@
 # [brutal.io](https://brutal.io) info
 
-In this repo, you will find  a lot of my research on the game [brutal.io](https://brutal.io), including packet information and structure.
-## Clientbound Packets
+In this repo, you will find a lot of my research on the game [brutal.io](https://brutal.io), including packet information and structure.
 
-| Name| Description |
-| ----------- | ----------- |
-| b5| Leaderboard Packet|
-| b4| Update Packet|
+## Encoding Types
 
-| Name| Structure|
-| ----------- | ----------- |
-| b5|```u8 header```, ```u16 id```, ```u32 score```, ```u16 list of characters of a name, terminated by a null value```,```repeat until the id is null```|
-| b4| ```u8 header```, ```u16 entity id [if this value is null, we break out of the loop]```, ```u8 entity flag``` ```[entity flag == 0: the game then updates the network with "h.updateNetwork(dataView, at, !1, packet)][entity flag == 1: a new entity was created][entity flag == 2: an entity was deleted]```|
+| Name    | Description               |  Length (bytes) | Shorthand |
+|---------|---------------------------|-----------------|-----------|
+| uint8   | a unsigned 8 bit integer  | 1               | u8        |
+| uint16  | a unsigned 16 bit integer | 2               | u16       |
+| uint32  | a unsigned 32 bit integer | 4               | u32       |
+| float32 | a floating point number   | 4               | f32       |
 
-## Usage
+## Packets
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
