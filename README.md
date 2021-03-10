@@ -19,15 +19,12 @@ In this repo, you will find a lot of my research on the game [brutal.io](https:/
 |-------------|------------------------------------------------------------------------------------------|----------|
 | 0x00        | a single byte, sent by the client when it is ready, in the game code also used as a ping | complete |
 | 0x01        | contains screen dimensions of the client                                                 | complete |
-| 0x02        |                                                                                          |          |
 | 0x03        | spawn packet, contains name of the player                                                | complete |
-| 0x04        | leave packet                                                                             |          |
+| 0x04        | leave packet                                                                             | complete |
 | 0x05        | input packet                                                                             | complete |
-| 0x06        |                                                                                          |          |
 | 0x07        | resize packet                                                                            | complete |
 | 0x08        | click packet                                                                             | complete |
-| 0x09        |                                                                                          |          |
-| x0a         |                                                                                          |          |
+
 
 # Incoming (clientbound)
 
