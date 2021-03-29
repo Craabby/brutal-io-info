@@ -237,7 +237,7 @@ This leaderboard packet. Used to update the in game leaderboard.
 ---
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+If anyone has newer information, or would like to help out in any way, please submit a pull request or open an issue.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
