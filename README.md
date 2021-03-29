@@ -68,7 +68,7 @@ This is the spawn packet, sent when a player wants to spawn into the game. The l
 ```03 74 00 65 00 73 00 74 00 69 00 6E 00 67 00 31 00 32 00 33 00 00 00```
 
 ## Structure
-```u8(header) ...u16(characters of name, continues until a null value is read)```
+```u8(header) ...[u16(characters of name, continues until a null value is read)]```
 
 ---
 
@@ -100,7 +100,7 @@ If you were to have throttle enabled, and have the screen unfocussed, you would 
 ```05 40 63 14 01 0E 28 F0 3F 03```
 
 ## Structure
-```u8(header) f64(player/mouse angle) u8(flags)```
+```u8(header) f64(mouse angle in radians) u8(flags)```
 
 ---
 
